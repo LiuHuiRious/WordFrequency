@@ -18,6 +18,10 @@ describe("Word Frequency", function() {
     expect(expect_string).toEqual(result);
   })
 
-  
+  it('return string given duplicated words',function(){
+    var result=main('he is he');
+    var expect_string='he 2\r\nis 1';
+    expect(expect_string).toEqual(result);
+  })
 
 });
