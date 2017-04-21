@@ -12,4 +12,12 @@ describe("Word Frequency", function() {
     expect(expect_string).toEqual(result);
   })
 
+  it('return string given two different words',function(){
+    var result=main('he is');
+    var expect_string='he 1\r\nis 1';
+    expect(expect_string).toEqual(result);
+  })
+
+  
+
 });
